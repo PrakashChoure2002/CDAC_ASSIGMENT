@@ -1,0 +1,32 @@
+					Assignment_8
+				Formatting Query output.
+
+
+1) Assume each salesperson has a 12% commission. Write a query on the orders 
+table that will produce the order number, the salesperson number, and the amount 
+of the salesperson’s commission for that order.
+
+select onum, snum, amt*0.12 as commission_amt from orders;
+
+
+2) Write a query on the Customers table that will find the highest rating in each city. 
+Put the output in this form:
+ For the city (city), the highest rating is : (rating).
+
+
+select concat('For the city ' ,city, ',  the highest rating is : ', max(rating) ) as formatted_output from customers group by city;
+
+
+3) Write a query that lists customers in descending order of rating. Output the rating 
+field first, followed by the customer’s name and number.
+
+select rating, cname, cnum from customers order by rating;
+
+4) Write a query that totals the orders for each day and places the results in 
+descending order
+
+select c.city, o.odate, sum(o.amt) as total_Orders 
+from orders o
+JOIN customers c ON o.cnum = c.cnum
+group by c.city, o.odate
+order by total_Orders desc;

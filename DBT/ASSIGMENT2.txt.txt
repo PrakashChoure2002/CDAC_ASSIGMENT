@@ -1,0 +1,15 @@
+Assignment –2
+Introducing Relational Databases.
+
+1) Which field of the Customers table is the primary key?
+-> Cnum column is key the primary key in customers table because primary key is the key which is used to identify the records in the table . It it very useful when we want to fetch particular record from the table.
+
+
+2) What is the 4th column of the Customers table?
+-> Snum column is foreign key because it a column which exits in both table i.e SALESPEOPLE and CUSTOMERS and it act as a link between both tables.
+
+3) What is another word for row? For column?
+-> Another name for row is Record, similarly for column it's field/attributes.
+
+4) Why isn’t it possible to see the first five rows of a table?
+-> In MySQL data is stored sequentially whereas in RDBMS data is not stored sequentially because data of rows are scattered all over the database. It is done so that the INSERT operation can be executed quickly; similarly, in MySQL it is very slow. When you use INSERT a record in a table MySQL find the free space in the database and once you INSERT a row in a table, the address of the row is constant. While fetching the records from the table output depends upon the ascending order of row address but when you UPDATE a row, due to which the length of the row increases and free space is not available then the entire row is moved to some other address. Due to this reason, it is not possible to see the first '5' rows of the table.
