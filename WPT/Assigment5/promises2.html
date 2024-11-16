@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    /*
+    1. Print out "Program started" at the start of your code
+    2. Create a Promise that resolves after 3 seconds
+    3. Log out the promise while it's pending
+    4. Print out "Program in progress..." as well
+
+    5. Print out "Step 1 complete" when the first promise fulfills
+    6. Have the first promise return another new Promise that will
+       fulfill after 3 seconds with the message: "Step 2 Complete"
+
+    7. Print out the message from the second promise after it
+       fulfills ("Step 2 Complete")
+
+    HINT: Use setTimeout for the delay
+*/
+<script>
+    // question1
+    console.log("program started")
+    // question2
+    const mypromise=new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve()
+        },3000)
+    })
+    mypromise
+// question3
+    console.log("Program in progress..")
+    // question4
+    mypromise.then(()=>{
+        console.log("step1 completer")
+        return new Promise((resolve, reject) => {
+            setTimeout(()=>{
+               resolve("step 2 complete")
+            },6000)
+        })
+           }).then((val)=>{
+            console.log(val)
+           })
+</script>
+</body>
+</html>

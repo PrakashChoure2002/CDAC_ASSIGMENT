@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">
+        <p>Lorem <span id="demo1" onmouseover="mouseOver()" onmouseout="mouseOut()"> hello1</span>  sit amet consectetur adipisicing elit. Quis veniam laboriosam reiciendis. <span id="demo1" onmouseover="mouseOver()" onmouseout="mouseOut()">hello2</span>  optio <span id="demo1" onmouseover="mouseOver()" onmouseout="mouseOut()">hello3</span>  ipsam a alias dolores delectus labore quo suscipit possimus provident, veniam <span id="demo1" onmouseover="mouseOver()" onmouseout="mouseOut()">hello4</span>  excepturi id.
+        </p>
+
+    </div>
+
+    <script>
+
+function mouseOver() {
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").style.backgroundColor = "black";
+  document.querySelectorAll("#demo1").forEach((element)=>element.style.color="black");
+
+}
+
+function mouseOut() {
+  document.getElementById("demo").style.color = "black";
+    document.getElementById("demo").style.backgroundColor = "white";
+
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+
+table, th, td {
+        border: 1px solid black;
+      }
+      .box{
+       
+  /* background-color: rgb(163, 14, 14); */
+  width: 300px;
+  border: 20px solid rgb(37, 42, 37);
+  padding: 30px;
+  margin: 20px;
+
+      }
+      .box p{
+        padding: 20px;
+        margin: 0px;
+        background-color: yellow;
+
+      }
+</style>
+   
+     
+</head>
+<body>
+    <h1 id="h">hello</h1>
+    <h1 id="page-title">Phonebook</h1>
+
+    <p class="family">Marie</p>
+    <p class="family">Jose</p>
+    <p class="work">Anne</p>
+    <p class="work">Joan</p>
+    <div id="cont">
+        <p id="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore dignissimos magnam excepturi et est ratione dicta natus asperiores iste atque necessitatibus aliquam provident esse earum incidunt, aut ullam, odio fuga?
+        </p>
+        
+        <button id="click">First button</button>
+        
+    </div>
+    <div>
+        <span>jiii</span>
+        <span>hiii</span>
+        <p>hiii</p>
+    <p>hiii222</p>
+    internal
+    <a href="./cloneproject.html">project</a>
+    image
+    <a href=""><img src="#"></a>
+    exernal
+    <a href=""></a>
+    email
+    <a href="mailto:info@example.com">Contact Us</a>
+    </div>
+    <table>
+        <tr>
+          <th  >Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td >Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+      </table>
+      <div class="box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem quisquam nisi enim et blanditiis dicta rerum deserunt sit, magni repudiandae, eius ad facere aut aliquid, repellendus dignissimos corrupti dolores voluptatibus.
+        </p>
+        
+      </div>
+    
+    
+    <script>
+        const dat=document.getElementById("page-title")
+        console.log(dat)
+        const dat1=document.getElementsByTagName('p')
+        console.log(dat1)
+        const d2=document.querySelector('.family')
+        console.log(d2)
+        const thirdBtn = document.querySelector('div button:nth-child(3)')
+console.log(thirdBtn)
+const ch=document.getElementById('click').onclick=function(){
+    fun()
+}
+function fun(){
+    document.getElementById('cont').style.padding='25px';
+    document.getElementById('cont').style.margin='25px';
+    document.getElementById('cont').style.color='black';
+    document.getElementById('click').style.color='red';
+    document.getElementById('cont').style.backgroundColor='grey';
+    document.getElementById('p').style.borderRadius='15px';
+    document.getElementById('p').style.fontWeight='bold';
+    document.getElementById('click').style.padding='15px';
+    document.getElementById('click').style.borderRadius='15px';
+
+
+
+}
+
+
+function a (name,c){
+    console.log(`${name.toUpperCase()}`)
+    console.log("adf")
+    c();
+
+}
+
+a("hello",function(){
+    console.log("a");
+
+})
+async function fetchdata(){
+  try {
+    let res=await fetch("https://dummyjson.com/users")
+    let data=await res.json()
+    
+    console.log(data);
+
+  
+} catch (error) {
+  console.log(error)
+}
+}
+fetchdata();
+
+
+
+    </script>
+</body>
+</html>

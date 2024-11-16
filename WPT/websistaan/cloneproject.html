@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Online Course</title>
+    <style>
+      body {
+        background-color: beige;
+      }
+      .btn:hover {
+        background-color: rgb(192, 224, 246);
+        color: rgb(99, 102, 99);
+        box-shadow: 5px 2px;
+      }
+      .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+        /* transform: translateX(-10px); */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        color: rgb(249, 88, 115);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
+      <div class="container-fluid">
+        <img
+          src="https://cdn-icons-png.freepik.com/512/7835/7835563.png"
+          style="height: 50px"
+          class="navbar-brand me-3"
+        />
+        <a class="navbar-brand me-3" href="#">Online Course</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./progres.html"
+                >Progrss Tracker</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/signup.html">Signup</a>
+            </li>
+            <li>
+              <a class="nav-link active" href="./addCourse.html">Add course</a>
+            </li>
+          </ul>
+          <div class="dropdown p-2 m-6 sm:m-1.5">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="https://t3.ftcdn.net/jpg/03/62/56/24/360_F_362562495_Gau0POzcwR8JCfQuikVUTqzMFTo78vkF.jpg"
+                style="height: 25px; width: 20px"
+              />
+              admin
+            </button>
+            <ul
+              class="dropdown-menu bg-gray"
+              aria-labelledby="dropdownMenuButton1"
+            >
+              <li>
+                <a class="dropdown-item" href="./certigen.html"
+                  >Generate Certificate</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./addCourse.html">Add course</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active m-0 m-auto" data-bs-interval="1000 ">
+            <img
+              src=" https://timesproweb-static-backend-prod.s3.ap-south-1.amazonaws.com/Popular_courses_in_IT_4415306030.webp"
+              class="d-block w-100"
+              style="max-height: 800px"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://ebz-static.s3.ap-south-1.amazonaws.com/easebuzz-static/online-courses.png"
+              class="d-block w-100"
+              style="max-height: 800px"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://chennai.vit.ac.in/wp-content/uploads/2021/06/Cyber-Security-Certification-Course-Computer-Science-Certification-Courses.jpg"
+              class="d-block w-100"
+              style="max-height: 800px"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center py-4">
+      <h1 style="margin-top: 10px; text-decoration: underline">
+        BUY CRAZY COURSE FROM HERE...
+      </h1>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card mx-auto" style="max-width: 350px">
+              <img
+                class="card-img-top"
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjB7NlMHPunvV5u9gYYkYv0sd6DFvWvSPfa4c70xdSIIO2abnTO6qbDLmEZCRRDBPGYJe_5ZBzHdyP0ri_CLc8_qx6iGKX00KyrE2eHEQolmNgXV_4KRcfNI29HCtgNZJYikoLS_EuaRe-kj6lDP2eRqo8fB_IvGR9lKGPnWsoHVmq2Y-NTan7ZDkUd6Qc9/w0/dsaim.jpg"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">DSA</h4>
+                <p class="card-text">
+                  <span>Price:RS.520</span>
+                </p>
+                <a href="./course1.html" class="btn btn-primary">See More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card mx-auto" style="max-width: 350px">
+              <img
+                class="card-img-top"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTebnR5AMSTxJ_9lkten1u9YFrj0BGTxrHGUw&s"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Full Stack</h4>
+                <p class="card-text">
+                  <span>Price:RS.500</span>
+                </p>
+                <a href="./course2.html" class="btn btn-primary">See More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card mx-auto" style="max-width: 350px">
+              <img
+                class="card-img-top"
+                src="https://cdn.bap-software.net/2024/06/27220717/Cyber-Security.jpg"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Cyber Security</h4>
+                <p class="card-text">
+                  <span>Price :Rs.600</span>
+                </p>
+                <a href="./course3.html" class="btn btn-primary">See More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card mx-auto" style="max-width: 350px">
+              <img
+                class="card-img-top"
+                src="https://media.licdn.com/dms/image/D5612AQE17Owf8MmtLA/article-cover_image-shrink_720_1280/0/1707196522339?e=2147483647&v=beta&t=MvsTQlFWdJKJE0P70NuV9BZBincit1mtDDw3YZ5N7yY"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">DataBase Management</h4>
+                <p class="card-text">
+                  <span>Price :Rs.601</span>
+                </p>
+                <a href="./course4.html" class="btn btn-primary">See More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card mx-auto" style="max-width: 350px">
+              <img
+                class="card-img-top"
+                src="https://media.licdn.com/dms/image/D5612AQGbnhsdREIvJg/article-cover_image-shrink_720_1280/0/1717078192231?e=2147483647&v=beta&t=XovGHrOcu3j4JST3dxyl8lmCFiuawhn4za952oQNn_Q"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">C++</h4>
+                <p class="card-text">
+                  <span>Price :Rs.610</span>
+                </p>
+                <a href="./course5.html" class="btn btn-primary">See More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="d-flex justify-content-center">
+      <h1 style="margin-top: 10px">MORE ITEM COMING SOON...STAY UPDATE</h1>
+    </div> -->
+    <!-- contcat us -->
+    <!-- Contact 1 - Bootstrap Brain Component -->
+    <section class="bg-light py-3 py-md-5">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+            <h2 class="mb-4 display-5 text-center">Contact</h2>
+            <p class="text-secondary mb-5 text-center">
+              The best way to contact us is to use our contact form below.
+              Please fill out all of the required fields and we will get back to
+              you as soon as possible.
+            </p>
+            <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-lg-center">
+          <div class="col-12 col-lg-9">
+            <div class="bg-white border rounded shadow-sm overflow-hidden">
+              <form action="#!">
+                <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                  <div class="col-12">
+                    <label for="fullname" class="form-label"
+                      >Full Name <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="fullname"
+                      name="fullname"
+                      value=""
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="email" class="form-label"
+                      >Email <span class="text-danger">*</span></label
+                    >
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-envelope"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                          />
+                        </svg>
+                      </span>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        value=""
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-telephone"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                          />
+                        </svg>
+                      </span>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label"
+                      >Message <span class="text-danger">*</span></label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="3"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-grid">
+                      <button class="btn btn-primary btn-lg" type="submit">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="text-center text-lg-start bg-body-tertiary text-muted"
+      style="background-color: rgb(240, 227, 211); margin-top: 10px"
+    >
+      
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+      
+        <div class="me-5 d-none d-lg-block">
+          <!-- <span>Get connected with us on social networks:</span> -->
+        </div>
+      
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Online Course
+              </h6>
+              <p>
+               Best online course you can find with Min Price join the course...
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">course</h6>
+              <p>
+                <a href="./course1.html" class="text-reset">DSA</a>
+              </p>
+              <p>
+                <a href="./course2.html" class="text-reset">full Stack</a>
+              </p>
+              <p>
+                <a href="./course3.html" class="text-reset">Cyber Security</a>
+              </p>
+              <p>
+                <a href="./course4.html" class="text-reset">DataBase Management</a>
+              </p>
+              <p>
+                <a href="./course5.html" class="text-reset">C++</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> Prakash Choure</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                course@online.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> 9826896140</p>
+              <p><i class="fas fa-print me-3"></i> 9826896140</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="#">like it</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </body>
+</html>

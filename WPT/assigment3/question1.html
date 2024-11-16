@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cont" >
+        <p id="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore dignissimos magnam excepturi et est ratione dicta natus asperiores iste atque necessitatibus aliquam provident esse earum incidunt, aut ullam, odio fuga?
+        </p>
+        
+        <button id="click">First button</button>
+        
+    </div>
+
+    <script>
+const ch=document.getElementById('click').onclick=function(){
+    fun()
+}
+function fun(){
+    document.getElementById('cont').style.padding='25px';
+    document.getElementById('cont').style.margin='25px';
+    document.getElementById('cont').style.color='black';
+    document.getElementById('click').style.color='red';
+    document.getElementById('cont').style.backgroundColor='grey';
+    document.getElementById('p').style.borderRadius='15px';
+    document.getElementById('p').style.fontWeight='bold';
+    document.getElementById('click').style.padding='15px';
+    document.getElementById('click').style.borderRadius='15px';
+
+
+
+}
+
+
+    </script>
+    
+</body>
+</html>

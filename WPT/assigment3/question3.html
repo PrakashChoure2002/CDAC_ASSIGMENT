@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="remove" onclick="myfun()">remove</button>
+<div >
+
+   <ul id="clas">
+    <li>name</li>
+    <li>name1</li>
+    <li>name2</li>
+    <li>name3</li>
+   </ul>
+</div>
+<script>
+    function myfun(){
+        const element=document.getElementById('clas')
+        element.removeChild(element.firstElementChild)
+       }
+</script>
+    
+</body>
+</html>

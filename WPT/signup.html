@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sign up</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+   <style>
+      *{
+         font-family: 'Quicksand';
+         font-weight: bold;
+      }
+      #container{
+         width: 500px;
+         height: 500px;
+         text-align: center;
+         margin: 80px auto;
+         background: white;
+         margin-bottom: 160px;
+         border-radius: 25px;
+         
+      }
+      body{
+         background: linear-gradient(#7E57C2,#EF5350);
+      }
+      #heading{
+         padding-top: 20px;
+      }
+      input{
+         width: 70%;
+         margin-bottom: 25px;
+         padding-top: 15px;
+         padding-bottom: 15px;
+
+      }
+      button{
+         width: 35%;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         background: white;
+         color: #EF5350;
+         border-color:#EF5350;
+         border-width: 1px;
+         border-style: solid;
+         cursor: pointer;
+         transition: background 0.4s;
+         font-weight: bold;
+      }
+      button:hover{
+         background: #EF5350;
+         color: white;
+      }
+      a{
+        text-decoration: none;  
+        
+      }
+      .cl{
+         margin-bottom: 30px;
+        padding:20px 0 0 0;
+        font-weight: bold;
+        /* background-color: yellow; */
+      }
+
+   </style>
+</head>
+<body>
+   <div id="container">
+      <h2 id="heading">Sign up</h2>
+      <form>
+        
+         <input type="text" placeholder="Enter Username">
+         <input type="email" placeholder="Enter Email">
+         <input type="number" placeholder="Enter Number">
+         <input type="password" placeholder="Enter Password">
+         <input type="password" placeholder="Re-enter Password">
+         <button type="submit">Sign up</button>
+      </form>
+      <div class="cl">
+         <p> have an account? <a href="./login.html">login Now</a></p>
+   
+      </div>
+   </div>
+  
+</body>
+</html>

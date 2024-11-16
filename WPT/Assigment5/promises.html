@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    /*
+    1. Print out "Program started" at the start of your code
+    2. Create a Promise that resolves after 3 seconds
+       and rejects after 2 seconds
+    3. Log out the promise while it's pending
+    4. Print out "Program in progress..." as well
+
+    5. Print out "Program complete" if the promise fulfills
+    6. Print out "Program failure" if the promise rejects
+
+    HINT: Use setTimeout for the delay
+*/
+
+<script>
+
+    // question1
+    
+      const mypromise=  new Promise((resolve, reject) => {
+            setTimeout(()=>{
+                console.log("promises resolvw")
+                resolve();
+            
+        },3000)
+        setTimeout(()=>{
+                console.log("promises reject")
+                reject();
+            
+        },2000)
+                
+            })
+
+            
+            mypromise;
+
+            // question2
+            console.log(mypromise)
+            // question3
+            console.log("Program in progress...")
+            // question4
+            mypromise.then(()=>{
+                console.log("comolete")
+            }).catch(()=>{
+                console.log("my promises faliure")
+            }).finally(()=>{
+                console.log("everything is exucted")
+            })
+
+       
+    
+</script>
+</body>
+</html>

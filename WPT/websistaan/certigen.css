@@ -1,0 +1,24 @@
+
+body{
+    background-color: azure;
+}
+.addcourse {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-action-buttons input[type="submit"] {
+    width: 100%;
+    max-width: 150px;
+    margin-top: 10px;
+}
+
+.table thead th {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+    <style>
+        .stepper {
+  width: 100%;
+  display: flex;
+}
+
+li {
+  display: inline-block;
+  position: relative;
+  margin-top: 32px;
+}
+li + li {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+li + li::before {
+  display: block;
+  position: absolute;
+  left: -10%; 
+  top: -16px;
+  content: "";
+  width: 100%;
+  height: 4px;
+}
+
+.item {
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 8px;
+  z-index: 1;
+
+  text-align: center;
+}
+
+.item::before {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  content: "";
+  top: -32px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+
+
+.ready::before {
+  background-color: lightgrey;
+}
+.ready > .item::before {
+  background-color: lightgrey;
+}
+
+.wip::before {
+  background-color: lightcoral;
+}
+.wip > .item::before {
+  border: solid 8px lightcoral;
+  background-color: white;
+}
+
+.done::before {
+  background-color: lightcoral;
+}
+.done > .item::before {
+  background-color: lightcoral;
+}
+
+
+
+ul,
+li {
+  padding: 0;
+  list-style: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container mb-5 "  >
+        <h1 class="text-center bg-dark" style="color: white;">Track Your Progress</h1>
+      </div>
+
+    <ul class="stepper">
+        <li class="done">
+          <div class="item">
+            Enroll
+          </div>
+        </li>
+        <li class="done">
+          <div class="item">
+            20% Completions Course
+          </div>
+        </li>
+        <li class="wip">
+          <div class="item">
+            70% Completions Course
+          </div>
+        </li>
+        <li class="ready">
+          <div class="item">
+            100% Completions Course
+          </div>
+        </li>
+      </ul>
+
+      <div class="container mb-5 "  >
+        <h1 class="text-center " >Your Course</h1>
+      </div>
+      <div class="container">
+        <h3>C++ Materials</h3>
+        <div class="d-flex justify-content-center p-3 gap-2">
+        <div class="embed-responsive embed-responsive-1by1">
+            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/MNeX4EGtR5Y?si=9t3q1cWZ35dew37R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="embed-responsive embed-responsive-1by1">
+            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/MNeX4EGtR5Y?si=9t3q1cWZ35dew37R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="container">
+        <h3>Full Stack Materials</h3>
+        <div class="d-flex justify-content-center p-3 gap-2">
+        <div class="embed-responsive embed-responsive-1by1">
+            <iframe width="560" class="embed-responsive-item" height="315" src="https://www.youtube.com/embed/Sxxw3qtb3_g?si=1OA8aVBQTNnuWBmh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <div class="embed-responsive embed-responsive-1by1">
+            <iframe width="560" height="315" class="embed-responsive-item" src="https://www.youtube.com/embed/Sxxw3qtb3_g?si=1OA8aVBQTNnuWBmh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+
+
+      </div>
+    
+</body>
+</html>

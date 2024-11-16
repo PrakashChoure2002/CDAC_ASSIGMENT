@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>uperrcase</h1>
+    <script>
+        // question 1
+        function a (name,c){
+    console.log(`${name.toUpperCase()}`)
+    console.log("adf")
+    c();
+
+}
+
+a("hello",function(){
+    console.log("a");
+
+})
+
+
+
+function b(a){
+    // console.log(a);
+    a();
+   
+
+}
+// Question2
+b(function(){
+    const arr=[20,10,30,40,50,60];
+    arr.forEach(element => {
+        console.log(element)
+    });
+})
+
+// question3
+function fetchData(l,e){
+    
+    setTimeout(() => {
+        l;
+        
+    }, 1000);
+    console.log(`${l}`)
+    e();
+
+}
+fetchData(l="name",function(){
+    console.log(`hello,${l}`)
+})
+// question4
+function fetchData1(l,e){
+    try {
+        // this is error in timeout
+        setTimeou(() => {
+        l;
+        
+    }, 1000);
+    console.log(`${l}`)
+    e();
+        
+    } catch (error) {
+        console.log("Error occure")
+        
+    }
+    
+    
+
+}
+fetchData1(l="name",function(){
+    console.log(`hello,${l}`)
+})
+
+    </script>
+</body>
+</html>
